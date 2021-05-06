@@ -7,13 +7,13 @@ const AppifyForm = () => {
   const [option, setOption] = useState('1');
   const [resData, setResData] = useState([]);
   const handleSubmit = (event) => {
-    const payload = {
-        firstName: name,
-        gender: type,
-        option
-    }
-    console.log(payload)
-    localStorage.setItem('data', payload)
+      const payload = {
+          firstName: name,
+          gender: type,
+          option
+      }
+      localStorage.setItem('data', JSON.stringify(payload))
+      event.preventDefault();
   }
   const handleChange = ({target}) => {
       const {value} = target
