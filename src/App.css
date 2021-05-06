@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+body {
+    background-color: #1976D2;
+}
+.form-title {
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+}
+form {
+    max-width: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+}
+.label_text {
+    display: block;
+    padding: 10px;
+}
+.select_text {
+    margin: 16px;
+    width: 200px;
+
+    display: block;
+    padding: 2px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.submit-button {
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    cursor: pointer;
+    background-color: #7E57C2;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.submit-button:hover {
+    background-color: #673AB7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.submit-button:active {
+    transform: translateY(1px);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.list-records {
+    margin: 10px;
+    background-color: #fff;
+}.records{
+     display: block;
+    padding:10px;
+ }
